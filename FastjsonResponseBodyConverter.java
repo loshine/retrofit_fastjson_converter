@@ -1,10 +1,11 @@
 import com.alibaba.fastjson.JSON;
-import com.squareup.okhttp.ResponseBody;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
 
-import retrofit.Converter;
+import okhttp3.ResponseBody;
+import retrofit2.Converter;
+
 
 public class FastjsonResponseBodyConverter<T> implements Converter<ResponseBody, T> {
 
